@@ -20,7 +20,7 @@
         </xpath>
         <xpath expr="//page[@name='variants']" position="before">
           <page string="Documentations" name="general_information">
-              <group string="Datas">
+              <group string="Files">
                 <tree>
                   <field name="file_datasheet"/>
                 </tree>

@@ -22,11 +22,11 @@
                 <field name="url" widget="url" attrs="{'invisible':[('type','=','binary')]}"/>
                 <field name="mimetype" groups="base.group_no_one" invisible="1"/>
               </group>
-              <group string="History" groups="base.group_no_one" attrs="{'invisible':[('create_date','=',False)]}">
-                <label for="create_uid" string="Creation"/>
+              <group string="History" groups="base.group_no_one" attrs="{'invisible':[('write_date','=',False)]}">
+                <label for="create_uid" string="Updated"/>
                 <div name="creation_div">
-                  <field name="create_uid" readonly="1" class="oe_inline"/> on
-                  <field name="create_date" readonly="1"/>
+                  <field name="write_uid" readonly="1" class="oe_inline"/> on
+                  <field name="write_date" readonly="1"/>
                 </div>
               </group>
               <group name="description_group" string="Description" colspan="4">
@@ -57,6 +57,8 @@
           <field name="description"/>
           <field name="create_uid"/>
           <field name="create_date"/>
+          <field name="write_uid"/>
+          <field name="write_date"/>
         </tree>
       </xpath>
     </field>
